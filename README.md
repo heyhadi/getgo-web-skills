@@ -7,7 +7,7 @@ Shared Claude Code slash commands for the web platform team.
 This repo is intended to be consumed as a git submodule:
 
 ```bash
-git submodule add https://github.com/getgo/skills-repo .claude/skills
+git submodule add https://github.com/GetGo-Technologies/getgo-web-skills .claude/skills
 git submodule update --init
 ```
 
