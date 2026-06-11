@@ -4,18 +4,17 @@ Shared Claude Code slash commands for the web platform team.
 
 ## Setup
 
-This repo is intended to be consumed as a git submodule:
+Clone this repo into `.claude/skills` inside your project, then gitignore it so nothing gets committed:
 
 ```bash
-git submodule add https://github.com/GetGo-Technologies/getgo-web-skills .claude/skills
-git submodule update --init
+git clone https://github.com/GetGo-Technologies/getgo-web-skills .claude/skills
+echo ".claude/skills" >> .gitignore
 ```
 
-To update to the latest skills in a consuming repo:
+To update to the latest skills:
 
 ```bash
-git submodule update --remote .claude/skills
-git commit -m "chore: update shared skills ref"
+git -C .claude/skills pull
 ```
 
 ## Contributing
